@@ -1,0 +1,29 @@
+.loading-spinner {
+  height: 50px;
+}
+
+.loading-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #67CF22;
+  opacity: 0.6;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.loading-item.item2 {
+  animation-delay: -1s;
+}
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }  50% {
+    transform: scale(0);
+  }
+}

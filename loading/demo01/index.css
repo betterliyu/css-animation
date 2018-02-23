@@ -1,0 +1,36 @@
+.loading-spinner {
+  height: 50px;
+}
+
+.loading-item {
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  background-color: #67CF22;
+
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+
+.loading-item.item2 {
+  animation-delay: -1.1s;
+}
+.loading-item.item3 {
+  animation-delay: -1.0s;
+}
+.loading-item.item4 {
+  animation-delay: -0.9s;
+}
+.loading-item.item5 {
+  animation-delay: -0.8s;
+}
+
+
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.5);
+  }  20% {
+    transform: scaleY(1.0);
+  }
+}
